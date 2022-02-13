@@ -1,0 +1,42 @@
+/* :root variables */
+:root{
+    --rust: #b86f52;
+    --tan: #bdc4a7;
+    --dark: #2e282a;
+    --blue: #7796cb;
+    --header-tags: #f78764;
+}
+
+main{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5em;
+}
+
+main .section{
+    background-color: var(--dark);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 8px #2e282a;
+
+}
+
+.section h1{
+    color: var(--header-tags);
+}
+
+.section label{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.section p{
+    color: var(--tan);
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.section > div{
+    margin: 30px 0;
+}

@@ -1,0 +1,92 @@
+:root{
+    --rust: #b86f52;
+    --tan: #bdc4a7;
+    --dark: #2e282a;
+    --blue: #7796cb;
+    --header-tags: #f78764;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2em;
+    margin: 20px 20px;
+
+/* a way to position absolute, in the center */
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+section .card{
+    display: flex;
+    background-color: var(--dark);
+    min-width: 325px;
+    padding: 5px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -6px 6px 12px #2e282abb;
+}
+img{
+    width: 60px;
+    border-radius: 50%;
+    height: auto;
+    justify-content: flex-start;
+    margin: auto 20px;
+
+}
+
+.title{
+    color: var(--blue);
+    text-align: left;
+    line-height: .5;
+}
+
+.name{
+    font-size: 15px;
+    line-height: .5;
+    color: var(--header-tags);
+}
+
+.bio{
+    line-height: 1;
+    color: var(--tan);
+    font-size: 10px;
+}
+
+.exposed-code-container{
+    background-color: var(--dark);
+    height: auto;
+    min-width: 325px;
+    border-radius: 10px;
+    box-shadow: -6px 6px 12px #2e282abb;
+}
+
+.exposed-code-container pre code{
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code{
+    display: flex;
+    text-align: left;
+    border: 2px solid #7796cb;
+    margin: 0 95px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+pre h4{
+    display: flex;
+    justify-content: center;
+    color: var(--header-tags);
+    font-size: 20px;
+}
+
+
+

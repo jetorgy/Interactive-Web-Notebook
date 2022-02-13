@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Links -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="tags.css">
+
+    <title>Common Tags</title>
+</head>
+
+<body>
+    <div class="navbar flex">
+        <div class="container flex">
+            <h1 class="logo">Interactive Web Notebook</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tags.html">Tags</a></li>
+                    <li><a href="definitions.html">Definitions</a></li>
+                    <li><a href="grid.html"> Grids</a></li>
+                    <li><a href="form.html">Forms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<!--elements, tags and their-->
+<main class="tag-main">
+    <div class="tags">
+        <h2>Paragraph Tags<span>&lt;p&gt;&lt;/p&gt;</span> </h2>
+        <pre>
+            <code>
+&lt;p&gt;
+    you put your text in this area.
+&lt;/p&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2>Div Tags <span>&lt;div&gt;&lt;/div&gt;</span> </h2>
+        <pre>
+            <code>
+&lt;div id="div_tag" class="container"&gt;
+    &lt;p&gt;
+        divs are block level elements
+        You can use this to containerize
+        things like this paragraph tag.
+        Because div tags are "block" tags,
+        they were primarily used to create
+        sections on a Web page before
+        HTML 5 came along and introduced
+        the section tag.
+    &lt;/p&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2>Break Line Tags<span> &lt;br&gt;<span> </h2>
+        <p>
+            Break line tags are most common in poem type sentences. You use the (br) tag after each sentence to create space between lines, words, comma's, poetry stuff.
+        </p>
+        <pre>
+            <code>
+&lt;p&gt;
+    breaks are made to seperate &lt;br&gt;
+    lines such as &lt;br&gt;
+    in poems. These tags do not need &lt;br&gt;
+    an open and close tag. &lt;br&gt;
+    Instead, you insert the tag at the &lt;br&gt;
+    end of each line, &lt;br&gt;
+    NOT THIS last line though.
+&lt;/p&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2>Italic Tags<span> &lt;i&gt;&lt;/i&gt;<span> </h2>
+            <p>
+                This is the Italic tag (i) tag. It makes the text inside, italic text.
+            </p>
+        <pre>
+            <code>
+&lt;p&gt;
+    &lt;i&gt;Putting text inside this will make the
+    text italic! &lt;/i&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Putting text inside this will make the
+    text &lt;i&gt;italic!&lt;/i&gt;
+&lt;/p&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2>Anchor Tags<span> &lt;a&gt;&lt;/a&gt;<span> </h2>
+            <p>
+                This is the anchor (a) tag. It makes the text inside, a
+                clickable link.
+                <br>
+                <br>
+                Absolute Links are generally used to send readers of your
+                web site to another web site.
+                Absolute links start with http://
+            </p>
+        <pre>
+            <code>
+&lt;a href="http://appacademy.io"&gt;Absolute Link&lt;/a&gt;
+            </code>
+        </pre>
+        <p>
+            Relative links do not start with http:/. Instead,
+            they're paths with respect to the
+            file system.
+        </p>
+        <pre>
+            <code>
+&lt;a href="./grid_span/tags.html"&gt;Relative Link&lt;/a&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2>Bold Tags<span> &lt;b&gt;&lt;/b&gt;<span> </h2>
+            <p>
+                This is the bold (b) tag. It makes the text inside, bold text.
+            </p>
+        <pre>
+            <code>
+&lt;p&gt;
+    &lt;b&gt;Putting text inside this will make the
+    text bold!&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Putting text inside this will make the
+    text &lt;b&gt;BOLD !&lt;/b&gt;
+&lt;/p&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2 class="heading_tags">Heading Tags<span> &lt;h1-6&gt;&lt;/h1-6&gt;<span> </h2>
+        <p>
+            Heading Tags aren't just for creating different sized titles. Heading tags help the internet browser know which section of your page is the most important. This also helps in the SEO process when setting up a web page. Never mix the h tags in the flow. If you start with h1 then the next should be h2 and so on and so on.
+        </p>
+        <pre>
+            <code>
+&lt;h1&gt;I am very very important.&lt;/h1&gt;
+&lt;h2&gt;I am very important.&lt;/h2&gt;
+&lt;h3&gt;I am important.&lt;/h3&gt;
+&lt;h4&gt;I am kind ofimportant.&lt;/h4&gt;
+&lt;h5&gt;I am somewhere below important.&lt;/h5&gt;
+&lt;h6&gt;I am more important than a p tag.&lt;/h6&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2>Span Tags <span> &lt;span&gt;&lt;/span&gt; <span> </h2>
+        <p>
+            Span tags primarily used to style text
+            within a larger body of text. The above Header "Span Tags" followed by its code is an example of the span tag being used.
+        </p>
+        <code>
+&lt;h2&gt; Span Tags &lt;span&gt;TEXT HERE&lt;/span&gt; &lt;h2&gt;
+        </code>
+    </div>
+
+    <div class="tags">
+        <h2>Image Tags <span>&lt;img src="locationofimage" alt="Text for Disabilities"&gt; <span></h2>
+        <p>
+            The image tag needs a src attribute to provide the
+            URL (absolute or relative) of where its located.
+
+            Image tags are empty tags in that they have
+            no content and, therefore, no end tag.
+
+            A required attribute for the image tag is the
+            "alt" attribute. The value of the "alt"
+            attribute is displayed if an image fails to load.
+        </p>
+        <pre>
+            <code padding="1rem">
+&lt;img src="locationofimage" width="200px" alt="in case
+the img fails to load"&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="tags">
+        <h2>Fieldset Tags <span>&lt;fieldset&gt;&lt;/fieldset&gt; <span></h2>
+        <p>
+            One of the most overlooked tags in HTML is
+            the fieldset tag. There are a few reasons why
+            the fieldset tag is so great. One of the
+            reasons is that it creates a clear division
+            of content.
+        </p>
+    </div>
+</main>
+</body>
+</html>
