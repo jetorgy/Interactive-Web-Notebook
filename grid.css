@@ -11,12 +11,6 @@ section{
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2em;
     margin: 20px 20px;
-
-/* a way to position absolute, in the center */
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 section .card{
@@ -34,7 +28,6 @@ img{
     height: auto;
     justify-content: flex-start;
     margin: auto 20px;
-
 }
 
 .title{
@@ -67,6 +60,14 @@ img{
     overflow-x: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+.css-code{
+    grid-column: 1 / span 2;
+}
+
+.html-code{
+    grid-column: 1 / span 2;
 }
 
 code{
