@@ -1,0 +1,260 @@
+@import url(
+    reset.css
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+:root{
+    --rust: #b86f52;
+    --tan: #bdc4a7;
+    --dark: #2e282a;
+    --blue: #7796cb;
+    --header-tags: #f78764;
+}
+
+
+/* navbar text adjustments */
+
+ul{
+    list-style-type: none;
+    margin-left: 6em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--tan);
+    font-size: small;
+}
+
+h1, h2, h3{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+span{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: var(--blue);
+    margin-left: 1.3em;
+}
+
+p{
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: medium;
+}
+
+/* navbar main structure and interaction*/
+.navbar{
+    background-color: var(--dark);
+    color: var(--header-tags);
+    min-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* navbar coloring and size */
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a{
+    color: var(--tan);
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    border-bottom: 2px var(--header-tags) solid;
+}
+
+.flex{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+
+
+
+
+
+
+/* beginning of flex.css */
+
+body{
+    font-family: 'Righteous', cursive;
+}
+
+.main-container{
+    display: flex;
+    height: auto;
+    background-color: white;
+    justify-content: center;
+    font-family: 'Righteous', cursive;
+}
+
+.container{
+    margin: 30px 10px;
+    width: 35rem;
+    height: 30rem;
+    padding: 1.2rem;
+    background-color: var(--dark);
+    box-shadow: -5px 5px 20px rgb(51, 51, 51);
+    border-radius: 10px;
+}
+
+.display-flex{
+    height: 25rem;
+}
+
+.display-flex .example{
+    background-color: white;
+}
+
+.flex-basis{
+    height: 42rem;
+}
+
+.flex-basis .example{
+    background-color: white;
+}
+
+.container-flex{
+    border: 2px solid red;
+}
+
+.container-flex .example{
+    background-color: white;
+}
+
+.container .justify{
+    justify-content: center;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.container-align{
+    height: 47rem;
+}
+.container-align .align{
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.navbar-flex{
+    align-items: center;
+    border: none;
+}
+
+.flex-es{
+    height: 50rem;
+}
+
+.container .flex-start{
+    justify-content: flex-start;
+    margin: 8px 0;
+    background-color: white;
+}
+
+.container .flex-end{
+    justify-content: flex-end;
+    margin: 8px 0;
+    background-color: white;
+}
+
+.container-flex{
+    display: flex;
+}
+
+/* .container-flex > *{
+    flex-basis: 100%;
+} */
+
+.flex-child{
+    background-color: rgb(197, 197, 197);
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.flex-child-text-example{
+    background-color: rgb(197, 197, 197);
+    margin: 2px;
+    padding: 10px;
+}
+
+.child-text{
+    font-size: 12px;
+}
+
+p{
+    margin: 5px 0;
+}
+
+.parent-flow{
+    color: rgba(0, 102, 255, 0.9);
+}
+
+.text{
+    margin: 20px 0;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+h2{
+    text-align: center;
+    margin: .5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: orange;
+}
+
+h1{
+    text-align: center;
+    margin: .5em;
+    text-transform: uppercase;
+    color: var(--header-tags);
+}
+
+.main-container h1 {
+    color: var(--dark);
+}
+
+.step-info{
+    color: white;
+}
+
+code{
+    font-size: 13px;
+    color: limegreen;
+}
+
+
