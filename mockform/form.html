@@ -4,94 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Mock Form</title>
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
 </head>
 <body>
-        <form action="/pets" method="post">
-            <fieldset>
-                <div class="name">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="pet_name">
-                </div>
-                <div class="type">
-                    <label for="type">Type</label>
-                    <select name="pet_type" id="type">
-                        <option>Cat</option>
-                        <option>Dog</option>
-                        <option>Hamster</option>
-                        <option>Other</option>
-                        <option>Zebra</option>
-                    </select>
-                </div>
-                <div class="bio">
-                    <label for="bio">Biography</label>
-                    <textarea name="pet_bio" id="bio" cols="30" rows="2"></textarea>
-                </div>
-                <div class="email">
-                    <label for="owner-email">Owner's Email</label>
-                    <input type="email" name="pet_owner_email" id="owner-email">
-                </div>
-                <div class="submit_btn">
-                    <button type="submit" id="new-pet-submit-button">Create new pet</button>
-                </div>
-                <div class="reset_btn">
-                    <button type="reset">Reset</button>
-                </div>
-            </fieldset>
-        </form>
+    <form action="/pets" method="post">
+        <fieldset>
+            <!--=============================== PET NAME =============================-->
+            <div class="name">
+                <label for="name">Name</label>
+                <input type="text" name="pet_name" id="name">
+            </div>
 
-        <section>
-            <pre>
-                <code>
-                    *{
-                        margin: 0px;
-                        padding: 0px;
-                    }
+            <!--=============================== OWNER EMAIL =============================-->
+            <div class="email">
+                <label for="owner-email">Owner's Email</label>
+                <input type="email" id="owner-email" name="pet_owner_email">
+            </div>
 
-                    body{
-                        display: flex;
-                        justify-content: center;
-                        padding: 20px;
-                    }
+            <!--=============================== PET/TYPE SELECTION =============================-->
+            <div class="type">
+                <label for="type">Type</label>
+                <select name="pet_type" id="type">
+                    <option value="opt_cat">Cat</option>
+                    <option value="opt_dog">Dog</option>
+                    <option value="opt_hamster">Hamster</option>
+                    <option value="opt_other">Other</option>
+                    <option value="opt_zebra">Zebra</option>
+                </select>
+            </div>
 
-                    form{
-                        width: 600px;
-                    }
+            <!--=============================== BIOGRAPHY =============================-->
+            <div class="bio">
+                <label for="bio">Biography</label>
+                <textarea name="pet_bio" id="bio" cols="15" rows="15"></textarea>
+            </div>
 
-                    fieldset{
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        gap: 5px;
-                        justify-items: center;
-                        align-items: start;
-                        padding: 20px 0px;
-                    }
+            <!--=============================== SUBMIT BUTTON =============================-->
+            <div class="create">
+                <button type="submit" id="new-pet-submit">Create new pet</button>
+            </div>
 
-                    div{
-                        width: 200px;
-                    }
-
-                    label, button, select, textarea, input{
-                        display: inline-block;
-                        width: 100%;
-                    }
-
-                    @media screen and (max-width: 600px) {
-                        fieldset{
-                            display: flex;
-                            flex-direction: column;
-                            justify-items: center;
-                            align-items: start;
-                            padding: 20px 15px;
-                        }
-
-                        div{
-                            width: 100%;
-                        }
-                    }
-                </code>
-            </pre>
-        </section>
+            <!--=============================== RESET BUTTON =============================-->
+            <div class="reset">
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
