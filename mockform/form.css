@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 50px;
+}
+
+form{
+    width: 600px;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: start;
+    padding: 20px 0px;
+}
+
+div{
+    width: 200px;
+}
+
+label, button, select, textarea, input{
+    display: inline-block;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: start;
+        padding: 20px 15px;
+    }
+
+    div{
+        width: 100%;
+    }
+}
