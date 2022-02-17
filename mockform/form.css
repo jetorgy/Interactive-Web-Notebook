@@ -1,0 +1,123 @@
+/**============================================
+ *               MAIN ELEMENTS
+ *=============================================**/
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+/* fieldset{
+    border: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+} */
+
+fieldset{
+    display: grid;
+    border: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "name name bio bio"
+    "email email bio bio"
+    "type type bio bio"
+    "reset reset bio bio"
+    "create create bio bio";
+}
+
+fieldset > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+}
+
+form{
+    margin: 20px;
+    width: 600px;
+    height: fit-content;
+    background-color: rgb(155, 155, 155);
+}
+
+/**============================================
+ *               GRID AREAS
+ *=============================================**/
+
+.name{
+    grid-area: name;
+}
+
+.email{
+    grid-area: email;
+}
+
+.type{
+    grid-area: type;
+}
+
+.bio{
+    grid-area: bio;
+}
+
+.create{
+    grid-area: create;
+}
+
+.reset{
+    grid-area: reset;
+}
+
+/**============================================
+ *         CHILD / INDIVIDUAL ELEMENTS
+ *=============================================**/
+
+label{
+    display: inline-block;
+    width: 250px; /*set back to 200px*/
+    text-align: left;
+}
+
+input, button, select{
+    width: 250px ; /*set back to 200px*/
+    height: fit-content;
+    box-sizing: border-box;
+    border: 1px solid rgb(46, 46, 46);
+}
+
+textarea{
+    width: 250px ; /*set back to 200px*/
+    box-sizing: border-box;
+    border: 1px solid rgb(46, 46, 46);
+    vertical-align: top;
+    max-height: 200px;
+    min-height: 5px;
+}
+
+
+/**============================================
+ *               MEDIA RULES
+ *=============================================**/
+
+@media  screen and (max-width: 600px){
+    fieldset{
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    input, textarea, select, button{
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgb(46, 46, 46);
+    }
+
+    label{
+        width: 100%;
+    }
+}

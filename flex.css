@@ -258,3 +258,14 @@ code{
 }
 
 
+nav a{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+

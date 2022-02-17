@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-/* page zeroing */
+/**============================================
+ *                   RESET
+ *=============================================**/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* :root variables */
+
+
+/**============================================
+ *                 VARIABLES
+ *=============================================**/
 :root{
     --rust: #b86f52;
     --tan: #bdc4a7;
@@ -17,6 +23,10 @@
 }
 
 
+
+/**============================================
+ *               MAIN ELEMENTS
+ *=============================================**/
 /* navbar text adjustments */
 body{
     font-family: 'Righteous', cursive;
@@ -24,6 +34,18 @@ body{
     line-height: 1.6;
 }
 
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+
+
+/**============================================
+ *             TEXT / LIST STYLING
+ *=============================================**/
 ul{
     list-style-type: none;
     margin-left: 6em;
@@ -70,7 +92,11 @@ p{
     font-size: medium;
 }
 
-/* navbar main structure and interaction*/
+
+
+/**============================================
+ *   NAVBAR MAIN STRUCTURING AND INTERACTION
+ *=============================================**/
 .navbar{
     background-color: var(--dark);
     color: var(--header-tags);
@@ -87,25 +113,9 @@ p{
     justify-content: flex-end;
 }
 
-.navbar a{
-    color: var(--tan);
-    padding: 5px 10px;
-    margin: 0 5px;
-    cursor: pointer;
-}
 
-.navbar a:hover{
-    border-bottom: 2px var(--header-tags) solid;
-}
 
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-
-/* Controlling the height of the navbar */
+/* NAVBAR HEIGHT */
 .flex{
     display: flex;
     justify-content: center;
@@ -113,7 +123,9 @@ p{
     height: 100%;
 }
 
-/* main menu read more... cards */
+/**============================================
+ *             READ MORE / CARDS
+ *=============================================**/
 
 .container .flex{
     display: flex;
@@ -138,14 +150,17 @@ p{
     flex-direction: column;
     align-content: flex-start;
     cursor: pointer;
+    transform: scale(1.0);
+    transition: .5s ease-in-out;
 }
 
+/* HOVER / TRANSITION */
 .info-cards .card:hover{
-    transition: .3s ease-in-out;
     transform: scale(1.05);
 }
 
 
+/* TEXT / HEADERS */
 .info-cards h3{
     color: var(--header-tags);
 }
@@ -156,6 +171,10 @@ p{
     margin-right: 10px;
 }
 
+.card h3{
+    padding: 10px;
+}
+
 .btn-readme{
     color: var(--blue);
     background-color: transparent;
@@ -164,10 +183,7 @@ p{
     width: 6rem;
     border-radius: 4px;
     margin: 20px 10px;
+}
 
-}
-.card h3{
-    padding: 10px;
-}
 
 

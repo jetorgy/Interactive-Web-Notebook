@@ -138,4 +138,18 @@ code h4{
     border-radius: 10px;
 }
 
+/**============================================
+ *            BACK BUTTON PLACEMENT
+ *=============================================**/
+
+ nav a{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
 

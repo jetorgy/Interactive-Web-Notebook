@@ -22,7 +22,7 @@ section .card{
     border-radius: 10px;
     box-shadow: -6px 6px 12px #2e282abb;
 }
-img{
+.card_image{
     width: 60px;
     border-radius: 50%;
     height: auto;
@@ -87,6 +87,16 @@ pre h4{
     justify-content: center;
     color: var(--header-tags);
     font-size: 20px;
+}
+
+nav a{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
 }
 
 

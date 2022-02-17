@@ -18,16 +18,6 @@
     gap:1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 20px 20px;
-
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 1rem;
-    width: 100%;
-    margin: 2rem 1rem;
-    position: relative;
-    justify-items: center;
-    align-items: center; */
 }
 
 .tags > h2{
@@ -45,9 +35,20 @@
 
 }
 
+.tag-main span{
+    font-size: medium;
+    font-weight: 100;
+}
+
 p{
     color: var(--tan);
 }
+
+
+
+/**============================================
+ *            EXPOSED EXAMPLE CODE
+ *=============================================**/
 
 pre > *{
     color: var(--blue);
@@ -72,9 +73,19 @@ code{
 }
 
 
-.tag-main span{
-    font-size: medium;
-    font-weight: 100;
+
+/**============================================
+ *            BACK BUTTON PLACEMENT
+ *=============================================**/
+
+nav a{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
 }
 
 
