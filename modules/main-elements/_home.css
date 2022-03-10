@@ -1,13 +1,15 @@
 .home-container{
     display: inline-block;
     justify-content: center;
+    margin-left: 20rem;
+    margin-top: 10rem;
     width: 30rem;
     height: auto;
-    background-color: rgb(73, 73, 73);
 }
 
 .htag-container{
     display: inline-block;
+    width: 100%;
     justify-content: center;
 }
 
@@ -16,6 +18,7 @@
     color: var(--active-white);
     margin: 1rem;
     font-size: x-large;
+    text-align: center;
 }
 
 .container h2{
@@ -23,21 +26,31 @@
     color: var(--active-white);
     margin: 0 1rem;
     font-size: small;
+    text-align: center;
 }
 
 .container p{
     color: var(--inactive-white);
     margin: 1rem;
     font-size: smaller;
+    width: 100%;
+    line-height: 1.25rem;
 }
 
 .container span{
     color: var(--blue-secondary);
 }
 
+.secondary-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .line-decor{
     height: 1px;
-    width: 18rem;
-    margin: .5rem 1rem;
+    width: 20rem;
+    margin: .5rem;
     background-color: var(--blue-secondary);
 }
