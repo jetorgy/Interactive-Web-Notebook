@@ -1,0 +1,43 @@
+.home-container{
+    display: inline-block;
+    justify-content: center;
+    width: 30rem;
+    height: auto;
+    background-color: rgb(73, 73, 73);
+}
+
+.htag-container{
+    display: inline-block;
+    justify-content: center;
+}
+
+.container h1{
+    text-transform: uppercase;
+    color: var(--active-white);
+    margin: 1rem;
+    font-size: x-large;
+}
+
+.container h2{
+    text-transform: uppercase;
+    color: var(--active-white);
+    margin: 0 1rem;
+    font-size: small;
+}
+
+.container p{
+    color: var(--inactive-white);
+    margin: 1rem;
+    font-size: smaller;
+}
+
+.container span{
+    color: var(--blue-secondary);
+}
+
+.line-decor{
+    height: 1px;
+    width: 18rem;
+    margin: .5rem 1rem;
+    background-color: var(--blue-secondary);
+}
