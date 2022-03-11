@@ -76,6 +76,7 @@
     text-transform: uppercase;
     margin: .8rem;
     padding: 10px;
+    font-size: small;
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
