@@ -1,9 +1,9 @@
-@import url(./modules/style-modules/_reset.css);
-@import url(./modules/style-modules/_colors.css);
-@import url(./modules/style-modules/_fs.css);
-@import url(./modules/main-elements/_header.css);
-@import url(./modules/main-elements/_home.css);
-@import url(./modules/main-elements/_footer.css);
+@import url(./modules/style-modules/reset.css);
+@import url(./modules/style-modules/colors.css);
+@import url(./modules/style-modules/fs.css);
+@import url(./modules/main-elements/header.css);
+@import url(./modules/main-elements/home.css);
+@import url(./modules/main-elements/footer.css);
 
 body{
     height: auto;
