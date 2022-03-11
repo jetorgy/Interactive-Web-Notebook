@@ -3,10 +3,11 @@
 @import url(./modules/style-modules/_fs.css);
 @import url(./modules/main-elements/_header.css);
 @import url(./modules/main-elements/_home.css);
+@import url(./modules/main-elements/_footer.css);
 
 body{
-    height: 100vh;
-    background-color: var(--main-bg);
+    height: auto;
+    background-position: center;
+    background-image: url(./media-files/portfolio-bg.png);
+    background-size: 100%;
 }
-
-

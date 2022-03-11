@@ -1,23 +1,23 @@
+.landing-img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .home-container{
     display: inline-block;
     justify-content: center;
-    margin-left: 20rem;
     margin-top: 10rem;
-    width: 30rem;
+    margin-left: 20rem;
+    width: 40rem;
     height: auto;
-}
-
-.htag-container{
-    display: inline-block;
-    width: 100%;
-    justify-content: center;
 }
 
 .container h1{
     text-transform: uppercase;
     color: var(--active-white);
     margin: 1rem;
-    font-size: x-large;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -25,14 +25,14 @@
     text-transform: uppercase;
     color: var(--active-white);
     margin: 0 1rem;
-    font-size: small;
+    font-size: 1rem;
     text-align: center;
 }
 
 .container p{
-    color: var(--inactive-white);
+    color: var(--active-white);
     margin: 1rem;
-    font-size: smaller;
+    font-size: .8rem;
     width: 100%;
     line-height: 1.25rem;
 }
@@ -50,7 +50,38 @@
 
 .line-decor{
     height: 1px;
-    width: 20rem;
+    width: 80%;
     margin: .5rem;
     background-color: var(--blue-secondary);
 }
+
+.img-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.img-container img{
+    width: 40rem;
+    height: 40rem;
+    margin-top: 10rem;
+    -webkit-filter: drop-shadow(1rem 1rem .5rem var(--header));
+    filter: drop-shadow(1rem 1rem .5rem var(--header));
+}
+
+.read-more-btn{
+    background-color: transparent;
+    border: solid 2px var(--blue-secondary);
+    color: var(--active-white);
+    text-transform: uppercase;
+    margin: .8rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.read-more-btn:hover{
+    background-color: var(--blue-secondary);
+}
+
+
