@@ -4,10 +4,12 @@
 @import url(./modules/main-elements/header.css);
 @import url(./modules/main-elements/home.css);
 @import url(./modules/main-elements/footer.css);
+@import url(./modules/main-elements/artwork.css);
 
 body{
     height: auto;
     background-position: center;
     background-image: url(./media-files/portfolio-bg.png);
-    background-size: 100%;
+    background-size: contain;
+    overflow-x: hidden;
 }

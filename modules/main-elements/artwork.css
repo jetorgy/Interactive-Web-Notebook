@@ -1,0 +1,52 @@
+.artwork-body{
+    height: auto;
+    margin: 3rem;
+}
+
+.artwork-header{
+    width: 100%;
+    margin: 2rem;
+}
+
+.artwork-header h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: var(--active-white);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.artwork-header span{
+    color: var(--blue-secondary);
+}
+
+.artwork-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+}
+
+.artwork-card{
+    width: 200px;
+    height: 300px;
+}
+
+.artwork-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.artwork-card img:hover{
+    transform: scale(2);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* .artwork-body img{
+    display: none;
+} */
