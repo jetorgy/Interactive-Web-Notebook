@@ -43,7 +43,7 @@
 }
 
 .artwork-card img:hover{
-    transform: scale(2);
+    transform: scale(1.35);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
