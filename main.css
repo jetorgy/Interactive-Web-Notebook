@@ -5,11 +5,22 @@
 @import url(./modules/main-elements/home.css);
 @import url(./modules/main-elements/footer.css);
 @import url(./modules/main-elements/artwork.css);
+@import url(./modules/style-modules/bg-anim.css);
+@import url(./modules/main-elements/page-setup.css);
+@import url(./modules/main-elements/ui-ux.css);
+@import url('https://fonts.googleapis.com/css?family+Roboto:300,400,500,700,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
 body{
-    height: auto;
-    background-position: center;
-    background-image: url(./media-files/portfolio-bg.png);
-    background-size: contain;
+    background-image: url(./media-files/bg-triangles.png);
     overflow-x: hidden;
+    min-height: 100vh;
 }
+
+

@@ -1,38 +1,22 @@
-.artwork-body{
-    margin: 3rem;
-}
-
-.artwork-header{
+.body-container{
     width: 100%;
-    margin: 2rem;
+    min-height: 100vh;
 }
 
-.artwork-header h1{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    color: var(--active-white);
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.artwork-header span{
-    color: var(--blue-secondary);
-}
-
-.artwork-grid{
+.card-container{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
+    margin: 3rem;
 }
 
-.artwork-card{
+.ui-card{
     width: 200px;
     height: 300px;
 }
 
-.artwork-card img{
+.ui-card img{
     position: relative;
     width: 100%;
     height: 100%;
@@ -44,7 +28,7 @@
     z-index: 0;
 }
 
-.artwork-card img:hover{
+.ui-card img:hover{
     transform: scale(1.4);
     box-shadow: 20px 10px 10px 10px rgba(0, 0, 0, 0.5);
     border: 3px solid var(--blue-secondary);
